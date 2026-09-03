@@ -1,0 +1,14 @@
+{
+  "plataforma": "Rede Ipojuca",
+  "fluxo": "Solicitar cadastro/recadastramento no Bolsa Escola",
+  "canal": "App",
+  "respostas": {
+    "login_terceiro_obrigatorio": true,
+    "nivel_conta_nao_informado": true,
+    "sem_canal_alternativo_login": true,
+    "total_campos": 14,
+    "campos_upload": 6,
+    "documentos_nao_avisados": true
+  },
+  "observacao_livre": "Formulário acessível após login, com 14 campos no total (3 de texto, 5 de seleção e 6 de upload de documento). O popup de autorização de compartilhamento antes do formulário só menciona Nome e CPF, não avisa sobre os documentos que serão pedidos (cartão de vacinação, certidão de nascimento/RG do aluno, RG do responsável). Os campos de upload só aparecem rolando a tela, um a um. Os sinais 'sem_salvar_progresso', 'whatsapp_sem_contexto' e 'login_nao_unificado' ainda não foram confirmados dentro do app (ficam como próximo passo de teste) e por isso ficam de fora da nota, em vez de assumidos como verdadeiros."
+}

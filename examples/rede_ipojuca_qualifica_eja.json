@@ -1,0 +1,14 @@
+{
+  "plataforma": "Rede Ipojuca",
+  "fluxo": "Inscrição no curso Qualifica EJA",
+  "canal": "App",
+  "respostas": {
+    "login_terceiro_obrigatorio": true,
+    "nivel_conta_nao_informado": true,
+    "sem_canal_alternativo_login": true,
+    "total_campos": 16,
+    "campos_upload": 2,
+    "documentos_nao_avisados": true
+  },
+  "observacao_livre": "Formulário com 16 campos ao todo: termo de acordo, curso, RG (frente e verso), sexo, estado civil, escolaridade, endereço, CEP, complemento, comprovante de residência, telefone, necessidades especiais, raça, situação ocupacional, renda familiar e como tomou conhecimento do curso. Apenas 2 são upload (RG e comprovante de residência) — proporcionalmente bem menos do que o Bolsa Escola. A tela já começa em 'Solicitação para: [nome do titular]', mesmo padrão de login obrigatório via Gov.br observado no Bolsa Escola. Não foi capturada uma tela anterior mostrando lista de documentos necessários antes do formulário, então assumimos (por consistência com o padrão já visto na plataforma) que os documentos também não são avisados com antecedência aqui — vale confirmar isso especificamente se possível."
+}

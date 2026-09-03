@@ -1,0 +1,13 @@
+{
+  "plataforma": "Rede Ipojuca",
+  "fluxo": "Inscrição no Vale Ipojuca",
+  "canal": "App",
+  "respostas": {
+    "login_terceiro_obrigatorio": true,
+    "nivel_conta_nao_informado": true,
+    "sem_canal_alternativo_login": true,
+    "total_campos": 5,
+    "campos_upload": 4
+  },
+  "observacao_livre": "Formulário mais curto que o do Bolsa Escola (5 campos), mas com proporção alta de uploads (4 de 5 campos). Não foi confirmado se este formulário específico avisa a lista de documentos antes de começar (esse detalhe só foi verificado no Bolsa Escola), por isso o sinal 'documentos_nao_avisados' fica de fora da nota aqui, em vez de assumido."
+}

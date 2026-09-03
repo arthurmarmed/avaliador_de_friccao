@@ -1,0 +1,14 @@
+{
+  "plataforma": "Rede Ipojuca",
+  "fluxo": "Denunciar maus-tratos a animal",
+  "canal": "App",
+  "respostas": {
+    "login_terceiro_obrigatorio": true,
+    "nivel_conta_nao_informado": true,
+    "sem_canal_alternativo_login": true,
+    "total_campos": 5,
+    "campos_upload": 1,
+    "documentos_nao_avisados": false
+  },
+  "observacao_livre": "Como todos os serviços da Rede Ipojuca, este fluxo também exige login obrigatório via Gov.br para funcionar — a opção de 'enviar os dados anonimamente' é sobre o conteúdo da denúncia (identidade do denunciante não é revelada ao órgão responsável), não sobre dispensar o login de acesso ao app. Fora essa exigência de login (comum a todos os fluxos da plataforma), o formulário em si é o mais leve avaliado até agora: 5 campos ao todo (endereço com apoio de mapa; foto do animal, opcional; raça, opcional; tipo de maus-tratos), com apenas 1 upload, que é opcional."
+}

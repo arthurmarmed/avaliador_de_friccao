@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>{{TITULO}}</title>
+<style>
+  :root {
+    --preto: #111111;
+    --cinza: #666666;
+    --cinza-claro: #999999;
+    --linha: #cccccc;
+    --fundo-zebra: #f4f4f4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "SFMono-Regular", Consolas, Menlo, "Liberation Mono", monospace;
+    color: var(--preto);
+    background: #ffffff;
+    max-width: 980px;
+    margin: 32px auto 80px auto;
+    padding: 0 20px;
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+  .prompt { color: var(--cinza-claro); }
+  h1 {
+    font-size: 18px;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 2px 0;
+  }
+  .subtitulo {
+    color: var(--cinza);
+    font-size: 12px;
+    margin: 0 0 6px 0;
+  }
+  .regra {
+    border: none;
+    border-top: 1px solid var(--preto);
+    margin: 10px 0 20px 0;
+  }
+  h2 {
+    font-size: 13.5px;
+    margin: 0 0 8px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed var(--linha);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 6px 0;
+  }
+  th, td {
+    border: 1px solid var(--linha);
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 12.5px;
+  }
+  th {
+    background: var(--preto);
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: 0.3px;
+  }
+  tr:nth-child(even) td { background: var(--fundo-zebra); }
+  .num { color: var(--cinza-claro); width: 28px; }
+  .mono { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tag { font-weight: bold; }
+  .detalhe { color: var(--cinza); font-size: 11.5px; margin-top: 2px; }
+  .recomendacao { color: #222222; }
+  .bloco-fluxo { margin-top: 42px; }
+  .linha-nota { margin: 0 0 12px 0; }
+  .vazio { color: var(--cinza-claro); }
+  .rodape-fluxo { color: var(--cinza-claro); font-size: 11.5px; margin-top: 8px; }
+  footer {
+    margin-top: 60px;
+    padding-top: 10px;
+    border-top: 1px solid var(--preto);
+    color: var(--cinza-claro);
+    font-size: 11px;
+  }
+</style>
+</head>
+<body>
+  <p class="prompt">$ friccao-evaluator --relatorio</p>
+  <h1>{{TITULO}}</h1>
+  <p class="subtitulo">{{SUBTITULO}}</p>
+  <hr class="regra">
+
+  <h2>resumo</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>plataforma</th><th>fluxo</th><th>canal</th><th>nota</th><th>risco</th></tr>
+    </thead>
+    <tbody>
+      {{LINHAS_RESUMO}}
+    </tbody>
+  </table>
+
+  {{BLOCOS_DETALHE}}
+
+  <footer>fim do relatório — {{TOTAL_FLUXOS}} fluxo(s) avaliado(s)</footer>
+</body>
+</html>

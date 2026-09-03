@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>comparativo de fricção entre fluxos/plataformas</title>
+<style>
+  :root {
+    --preto: #111111;
+    --cinza: #666666;
+    --cinza-claro: #999999;
+    --linha: #cccccc;
+    --fundo-zebra: #f4f4f4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "SFMono-Regular", Consolas, Menlo, "Liberation Mono", monospace;
+    color: var(--preto);
+    background: #ffffff;
+    max-width: 980px;
+    margin: 32px auto 80px auto;
+    padding: 0 20px;
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+  .prompt { color: var(--cinza-claro); }
+  h1 {
+    font-size: 18px;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 2px 0;
+  }
+  .subtitulo {
+    color: var(--cinza);
+    font-size: 12px;
+    margin: 0 0 6px 0;
+  }
+  .regra {
+    border: none;
+    border-top: 1px solid var(--preto);
+    margin: 10px 0 20px 0;
+  }
+  h2 {
+    font-size: 13.5px;
+    margin: 0 0 8px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed var(--linha);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 6px 0;
+  }
+  th, td {
+    border: 1px solid var(--linha);
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 12.5px;
+  }
+  th {
+    background: var(--preto);
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: 0.3px;
+  }
+  tr:nth-child(even) td { background: var(--fundo-zebra); }
+  .num { color: var(--cinza-claro); width: 28px; }
+  .mono { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tag { font-weight: bold; }
+  .detalhe { color: var(--cinza); font-size: 11.5px; margin-top: 2px; }
+  .recomendacao { color: #222222; }
+  .bloco-fluxo { margin-top: 42px; }
+  .linha-nota { margin: 0 0 12px 0; }
+  .vazio { color: var(--cinza-claro); }
+  .rodape-fluxo { color: var(--cinza-claro); font-size: 11.5px; margin-top: 8px; }
+  footer {
+    margin-top: 60px;
+    padding-top: 10px;
+    border-top: 1px solid var(--preto);
+    color: var(--cinza-claro);
+    font-size: 11px;
+  }
+</style>
+</head>
+<body>
+  <p class="prompt">$ friccao-evaluator --relatorio</p>
+  <h1>comparativo de fricção entre fluxos/plataformas</h1>
+  <p class="subtitulo">gerado a partir de observações estruturadas</p>
+  <hr class="regra">
+
+  <h2>resumo</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>plataforma</th><th>fluxo</th><th>canal</th><th>nota</th><th>risco</th></tr>
+    </thead>
+    <tbody>
+      
+    <tr>
+      <td class="num">01</td>
+      <td>Rede Ipojuca</td>
+      <td>Solicitar cadastro/recadastramento no Bolsa Escola</td>
+      <td>App</td>
+      <td class="mono">███████████████░░░░░░░░░ 60.5</td>
+      <td class="mono tag">[ALTO]</td>
+    </tr>
+    <tr>
+      <td class="num">02</td>
+      <td>Rede Ipojuca</td>
+      <td>Inscrição no curso Qualifica EJA</td>
+      <td>App</td>
+      <td class="mono">████████████░░░░░░░░░░░░ 48.5</td>
+      <td class="mono tag">[MEDIO]</td>
+    </tr>
+    <tr>
+      <td class="num">03</td>
+      <td>Rede Ipojuca</td>
+      <td>Inscrição no Vale Ipojuca</td>
+      <td>App</td>
+      <td class="mono">██████░░░░░░░░░░░░░░░░░░ 25.5</td>
+      <td class="mono tag">[BAIXO]</td>
+    </tr>
+    <tr>
+      <td class="num">04</td>
+      <td>Rede Ipojuca</td>
+      <td>Denunciar maus-tratos a animal</td>
+      <td>App</td>
+      <td class="mono">████░░░░░░░░░░░░░░░░░░░░ 17.5</td>
+      <td class="mono tag">[BAIXO]</td>
+    </tr>
+    </tbody>
+  </table>
+
+  
+    <section class="bloco-fluxo">
+      <h2>[01] Rede Ipojuca :: Solicitar cadastro/recadastramento no Bolsa Escola (App)</h2>
+      <p class="linha-nota">
+        nota de fricção <span class="mono">███████████████░░░░░░░░░ 60.5/100</span>
+        &nbsp;&nbsp;[ALTO] ALTO risco de abandono
+      </p>
+      
+        <table>
+          <thead>
+            <tr><th>#</th><th>pts</th><th>categoria</th><th>sinal observado</th><th>recomendação</th></tr>
+          </thead>
+          <tbody>
+    <tr>
+      <td class="num">01</td>
+      <td class="mono">32</td>
+      <td>Formulário</td>
+      <td>
+        Número de campos que exigem upload de documento/foto
+        <div class="detalhe">&gt; Observado: 6 (limiar recomendado: 2)</div>
+      </td>
+      <td class="recomendacao">Reduzir a quantidade de uploads por formulário, ou permitir envio parcial com complementação posterior.</td>
+    </tr>
+    <tr>
+      <td class="num">02</td>
+      <td class="mono">30</td>
+      <td>Formulário</td>
+      <td>
+        O formulário NÃO apresenta, antes de começar, uma lista dos documentos que serão pedidos?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Mostrar a lista de documentos necessários antes do primeiro campo. Isso não elimina o abandono de quem não possui os documentos — essa pessoa provavelmente sairia de qualquer forma — mas evita que ela invista tempo preenchendo campos anteriores antes de descobrir o que falta, e aumenta a taxa de conclusão entre quem já está preparado.</td>
+    </tr>
+    <tr>
+      <td class="num">03</td>
+      <td class="mono">24</td>
+      <td>Formulário</td>
+      <td>
+        Número total de campos do formulário
+        <div class="detalhe">&gt; Observado: 14 (limiar recomendado: 8)</div>
+      </td>
+      <td class="recomendacao">Dividir o formulário em etapas curtas com indicador de progresso, em vez de uma lista longa de campos.</td>
+    </tr>
+    <tr>
+      <td class="num">04</td>
+      <td class="mono">20</td>
+      <td>Autenticação</td>
+      <td>
+        O fluxo exige login obrigatório via serviço de terceiros (ex.: Gov.br) antes de iniciar a solicitação?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Restringir a exigência de login via Gov.br apenas aos serviços que realmente necessitam dele, em vez de aplicá-la de forma padrão a todos os fluxos.</td>
+    </tr>
+    <tr>
+      <td class="num">05</td>
+      <td class="mono">10</td>
+      <td>Autenticação</td>
+      <td>
+        O fluxo NÃO informa antecipadamente qual nível de conta/verificação (ex.: Gov.br bronze/prata/ouro) é exigido para aquele serviço específico?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Indicar de forma explícita, na tela do serviço, o nível de conta necessário, com um link direto para o cidadão verificar ou elevar seu nível antes de tentar.</td>
+    </tr>
+    <tr>
+      <td class="num">06</td>
+      <td class="mono">5</td>
+      <td>Autenticação</td>
+      <td>
+        Caso o login falhe, o fluxo NÃO oferece nenhum canal alternativo visível (presencial, telefone)?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Exibir uma opção alternativa (presencial/telefone/WhatsApp humano) quando o login falhar, em vez de apenas travar o fluxo.</td>
+    </tr></tbody>
+        </table>
+    </section>
+    <section class="bloco-fluxo">
+      <h2>[02] Rede Ipojuca :: Inscrição no curso Qualifica EJA (App)</h2>
+      <p class="linha-nota">
+        nota de fricção <span class="mono">████████████░░░░░░░░░░░░ 48.5/100</span>
+        &nbsp;&nbsp;[MEDIO] risco MÉDIO de abandono
+      </p>
+      
+        <table>
+          <thead>
+            <tr><th>#</th><th>pts</th><th>categoria</th><th>sinal observado</th><th>recomendação</th></tr>
+          </thead>
+          <tbody>
+    <tr>
+      <td class="num">01</td>
+      <td class="mono">32</td>
+      <td>Formulário</td>
+      <td>
+        Número total de campos do formulário
+        <div class="detalhe">&gt; Observado: 16 (limiar recomendado: 8)</div>
+      </td>
+      <td class="recomendacao">Dividir o formulário em etapas curtas com indicador de progresso, em vez de uma lista longa de campos.</td>
+    </tr>
+    <tr>
+      <td class="num">02</td>
+      <td class="mono">30</td>
+      <td>Formulário</td>
+      <td>
+        O formulário NÃO apresenta, antes de começar, uma lista dos documentos que serão pedidos?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Mostrar a lista de documentos necessários antes do primeiro campo. Isso não elimina o abandono de quem não possui os documentos — essa pessoa provavelmente sairia de qualquer forma — mas evita que ela invista tempo preenchendo campos anteriores antes de descobrir o que falta, e aumenta a taxa de conclusão entre quem já está preparado.</td>
+    </tr>
+    <tr>
+      <td class="num">03</td>
+      <td class="mono">20</td>
+      <td>Autenticação</td>
+      <td>
+        O fluxo exige login obrigatório via serviço de terceiros (ex.: Gov.br) antes de iniciar a solicitação?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Restringir a exigência de login via Gov.br apenas aos serviços que realmente necessitam dele, em vez de aplicá-la de forma padrão a todos os fluxos.</td>
+    </tr>
+    <tr>
+      <td class="num">04</td>
+      <td class="mono">10</td>
+      <td>Autenticação</td>
+      <td>
+        O fluxo NÃO informa antecipadamente qual nível de conta/verificação (ex.: Gov.br bronze/prata/ouro) é exigido para aquele serviço específico?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Indicar de forma explícita, na tela do serviço, o nível de conta necessário, com um link direto para o cidadão verificar ou elevar seu nível antes de tentar.</td>
+    </tr>
+    <tr>
+      <td class="num">05</td>
+      <td class="mono">5</td>
+      <td>Autenticação</td>
+      <td>
+        Caso o login falhe, o fluxo NÃO oferece nenhum canal alternativo visível (presencial, telefone)?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Exibir uma opção alternativa (presencial/telefone/WhatsApp humano) quando o login falhar, em vez de apenas travar o fluxo.</td>
+    </tr></tbody>
+        </table>
+    </section>
+    <section class="bloco-fluxo">
+      <h2>[03] Rede Ipojuca :: Inscrição no Vale Ipojuca (App)</h2>
+      <p class="linha-nota">
+        nota de fricção <span class="mono">██████░░░░░░░░░░░░░░░░░░ 25.5/100</span>
+        &nbsp;&nbsp;[BAIXO] risco BAIXO de abandono
+      </p>
+      
+        <table>
+          <thead>
+            <tr><th>#</th><th>pts</th><th>categoria</th><th>sinal observado</th><th>recomendação</th></tr>
+          </thead>
+          <tbody>
+    <tr>
+      <td class="num">01</td>
+      <td class="mono">20</td>
+      <td>Autenticação</td>
+      <td>
+        O fluxo exige login obrigatório via serviço de terceiros (ex.: Gov.br) antes de iniciar a solicitação?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Restringir a exigência de login via Gov.br apenas aos serviços que realmente necessitam dele, em vez de aplicá-la de forma padrão a todos os fluxos.</td>
+    </tr>
+    <tr>
+      <td class="num">02</td>
+      <td class="mono">16</td>
+      <td>Formulário</td>
+      <td>
+        Número de campos que exigem upload de documento/foto
+        <div class="detalhe">&gt; Observado: 4 (limiar recomendado: 2)</div>
+      </td>
+      <td class="recomendacao">Reduzir a quantidade de uploads por formulário, ou permitir envio parcial com complementação posterior.</td>
+    </tr>
+    <tr>
+      <td class="num">03</td>
+      <td class="mono">10</td>
+      <td>Autenticação</td>
+      <td>
+        O fluxo NÃO informa antecipadamente qual nível de conta/verificação (ex.: Gov.br bronze/prata/ouro) é exigido para aquele serviço específico?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Indicar de forma explícita, na tela do serviço, o nível de conta necessário, com um link direto para o cidadão verificar ou elevar seu nível antes de tentar.</td>
+    </tr>
+    <tr>
+      <td class="num">04</td>
+      <td class="mono">5</td>
+      <td>Autenticação</td>
+      <td>
+        Caso o login falhe, o fluxo NÃO oferece nenhum canal alternativo visível (presencial, telefone)?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Exibir uma opção alternativa (presencial/telefone/WhatsApp humano) quando o login falhar, em vez de apenas travar o fluxo.</td>
+    </tr></tbody>
+        </table>
+    </section>
+    <section class="bloco-fluxo">
+      <h2>[04] Rede Ipojuca :: Denunciar maus-tratos a animal (App)</h2>
+      <p class="linha-nota">
+        nota de fricção <span class="mono">████░░░░░░░░░░░░░░░░░░░░ 17.5/100</span>
+        &nbsp;&nbsp;[BAIXO] risco BAIXO de abandono
+      </p>
+      
+        <table>
+          <thead>
+            <tr><th>#</th><th>pts</th><th>categoria</th><th>sinal observado</th><th>recomendação</th></tr>
+          </thead>
+          <tbody>
+    <tr>
+      <td class="num">01</td>
+      <td class="mono">20</td>
+      <td>Autenticação</td>
+      <td>
+        O fluxo exige login obrigatório via serviço de terceiros (ex.: Gov.br) antes de iniciar a solicitação?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Restringir a exigência de login via Gov.br apenas aos serviços que realmente necessitam dele, em vez de aplicá-la de forma padrão a todos os fluxos.</td>
+    </tr>
+    <tr>
+      <td class="num">02</td>
+      <td class="mono">10</td>
+      <td>Autenticação</td>
+      <td>
+        O fluxo NÃO informa antecipadamente qual nível de conta/verificação (ex.: Gov.br bronze/prata/ouro) é exigido para aquele serviço específico?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Indicar de forma explícita, na tela do serviço, o nível de conta necessário, com um link direto para o cidadão verificar ou elevar seu nível antes de tentar.</td>
+    </tr>
+    <tr>
+      <td class="num">03</td>
+      <td class="mono">5</td>
+      <td>Autenticação</td>
+      <td>
+        Caso o login falhe, o fluxo NÃO oferece nenhum canal alternativo visível (presencial, telefone)?
+        <div class="detalhe">&gt; Observado: sim</div>
+      </td>
+      <td class="recomendacao">Exibir uma opção alternativa (presencial/telefone/WhatsApp humano) quando o login falhar, em vez de apenas travar o fluxo.</td>
+    </tr></tbody>
+        </table>
+    </section>
+
+  <footer>fim do relatório — 4 fluxo(s) avaliado(s)</footer>
+</body>
+</html>
