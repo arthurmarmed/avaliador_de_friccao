@@ -73,3 +73,7 @@ a nota.
 ## Relatório final
 
 [Relatório de Avaliação de UX e Protótipo — Rede Ipojuca (PDF)](relatorio_final.pdf)
+
+## Vídeo de demonstração
+
+Assista aqui: https://youtu.be/RlbPM1t6mlA
