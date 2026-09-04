@@ -69,3 +69,7 @@ Basta criar um novo arquivo `.json` respondendo às mesmas perguntas de
 
 Perguntas não respondidas aparecem como "não observadas" e não afetam
 a nota.
+
+## Relatório
+
+[Relatório de Avaliação de UX e Protótipo — Rede Ipojuca.pdf](./Relatório%20de%20Avaliação%20de%20UX%20e%20Protótipo%20—%20Rede%20Ipojuca.pdf)
